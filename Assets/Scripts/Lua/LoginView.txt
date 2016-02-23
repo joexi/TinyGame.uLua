@@ -1,0 +1,30 @@
+
+
+local self = {}
+
+function self.Awake( ... )
+	print('Awake')
+end
+
+function self.Start( ... )
+	print('Start')
+end
+
+function self.Update( ... )
+	print('Update')
+end
+
+function self.OnDisable( ... )
+	print('OnDisable')
+end
+
+function self.OnEnable( ... )
+	print('OnEnable')
+end
+
+function self.OnDestroy( ... )
+	print('OnDestroy')
+end
+
+return self
+

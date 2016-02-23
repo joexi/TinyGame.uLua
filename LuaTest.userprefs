@@ -1,0 +1,17 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/lua/Driver/LuaViewDriver.cs">
+    <Files>
+      <File FileName="Assets/Scripts/lua/Driver/LuaDriver.cs" Line="17" Column="2" />
+      <File FileName="Assets/Scripts/View/LuaView.cs" Line="17" Column="28" />
+      <File FileName="Assets/Scripts/lua/Driver/LuaViewDriver.cs" Line="20" Column="43" />
+      <File FileName="Assets/Scripts/Lua/LoginView.txt" Line="31" Column="1" />
+      <File FileName="Assets/uLua/Examples/A5_Debugger/A5_Debugger.cs" Line="1" Column="1" />
+      <File FileName="Assets/uLua/Source/Base/Debugger.cs" Line="9" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
