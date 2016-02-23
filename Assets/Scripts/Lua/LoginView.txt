@@ -7,7 +7,13 @@ function self.Awake( ... )
 end
 
 function self.Start( ... )
+	local func1 = function() print('测试委托1'); end 
+	CSharpInterface.CreateButton(func1, 'haha');
 	print('Start')
+end
+
+function self.ButtonDidClick( ... )
+	print('ButtonDidClick')
 end
 
 function self.Update( ... )

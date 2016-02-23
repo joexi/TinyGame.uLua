@@ -84,7 +84,7 @@ public static class WrapFile {
         _GT(typeof(RenderTexture)),
         _GT(typeof(ParticleSystem)),
         
-//		_GT(typeof(TestClass)),
+            _GT(typeof(CSharpInterface)),
         //ngui
         /*_GT(typeof(UICamera)),
         _GT(typeof(Localization)),

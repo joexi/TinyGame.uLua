@@ -22,6 +22,7 @@ public static class LuaBinder
 			case "BehaviourWrap": BehaviourWrap.Register(L); break;
 			case "BlendWeightsWrap": BlendWeightsWrap.Register(L); break;
 			case "BoxColliderWrap": BoxColliderWrap.Register(L); break;
+			case "CSharpInterfaceWrap": CSharpInterfaceWrap.Register(L); break;
 			case "CameraClearFlagsWrap": CameraClearFlagsWrap.Register(L); break;
 			case "CameraWrap": CameraWrap.Register(L); break;
 			case "CharacterControllerWrap": CharacterControllerWrap.Register(L); break;
