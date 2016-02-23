@@ -7,29 +7,38 @@ function self.Awake( ... )
 end
 
 function self.Start( ... )
-	local func1 = function() print('测试委托1'); end 
-	CSharpInterface.CreateButton(func1, 'haha');
+
+	
+
+
+
+	local tex = CSharpInterface.CreateTexture('Texture/960');
+
+	local func1 = function() 
+		print(tex.transform.localPosition);
+		local p = tex.transform.localPosition;
+		tex.transform.localPosition = Vector3(p.x, p.y + 1, p.z);
+	end 
+	CSharpInterface.CreateSprite('Sprite/Sprite001');
+	CSharpInterface.CreateSprite('Sprite/Sprite002');
+	--CSharpInterface.CreateButton(func1, 'haha');
 	print('Start')
 end
 
-function self.ButtonDidClick( ... )
-	print('ButtonDidClick')
-end
-
 function self.Update( ... )
-	print('Update')
+	--print('Update')
 end
 
 function self.OnDisable( ... )
-	print('OnDisable')
+	--print('OnDisable')
 end
 
 function self.OnEnable( ... )
-	print('OnEnable')
+	--print('OnEnable')
 end
 
 function self.OnDestroy( ... )
-	print('OnDestroy')
+	--print('OnDestroy')
 end
 
 return self

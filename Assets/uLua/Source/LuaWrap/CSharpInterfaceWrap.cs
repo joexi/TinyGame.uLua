@@ -10,6 +10,9 @@ public class CSharpInterfaceWrap
 		{
 			new LuaMethod("GetPanel", GetPanel),
 			new LuaMethod("CreateButton", CreateButton),
+			new LuaMethod("CreateSprite", CreateSprite),
+			new LuaMethod("CreateTexture", CreateTexture),
+			new LuaMethod("CreateObject", CreateObject),
 			new LuaMethod("New", _CreateCSharpInterface),
 			new LuaMethod("GetClassType", GetClassType),
 		};
@@ -80,6 +83,36 @@ public class CSharpInterfaceWrap
 
 		string arg1 = LuaScriptMgr.GetLuaString(L, 2);
 		GameObject o = CSharpInterface.CreateButton(arg0,arg1);
+		LuaScriptMgr.Push(L, o);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int CreateSprite(IntPtr L)
+	{
+		LuaScriptMgr.CheckArgsCount(L, 1);
+		string arg0 = LuaScriptMgr.GetLuaString(L, 1);
+		GameObject o = CSharpInterface.CreateSprite(arg0);
+		LuaScriptMgr.Push(L, o);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int CreateTexture(IntPtr L)
+	{
+		LuaScriptMgr.CheckArgsCount(L, 1);
+		string arg0 = LuaScriptMgr.GetLuaString(L, 1);
+		GameObject o = CSharpInterface.CreateTexture(arg0);
+		LuaScriptMgr.Push(L, o);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int CreateObject(IntPtr L)
+	{
+		LuaScriptMgr.CheckArgsCount(L, 1);
+		string arg0 = LuaScriptMgr.GetLuaString(L, 1);
+		GameObject o = CSharpInterface.CreateObject(arg0);
 		LuaScriptMgr.Push(L, o);
 		return 1;
 	}

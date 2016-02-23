@@ -2,11 +2,14 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Lua/Interface/CSharpInterface.cs">
     <Files>
-      <File FileName="Assets/Scripts/Lua/Interface/CSharpInterface.cs" Line="23" Column="39" />
-      <File FileName="Assets/uLua/Editor/WrapFile.cs" Line="87" Column="42" />
-      <File FileName="Assets/Scripts/Lua/LoginView.txt" Line="11" Column="23" />
+      <File FileName="Assets/Scripts/Lua/Interface/CSharpInterface.cs" Line="35" Column="56" />
+      <File FileName="Assets/uLua/Editor/WrapFile.cs" Line="84" Column="36" />
+      <File FileName="Assets/Scripts/Lua/LoginView.txt" Line="1" Column="1" />
       <File FileName="Assets/uLua/Examples/09_Delegate/09_Delegate_1/LuaDelegate01.cs" Line="32" Column="9" />
       <File FileName="Assets/uLua/Core/LuaFunction.cs" Line="139" Column="1" />
+      <File FileName="Assets/Scripts/Utils/ResourcePath.cs" Line="10" Column="1" />
+      <File FileName="Assets/uLua/Core/Lua.cs" Line="139" Column="1" />
+      <File FileName="Assets/uLua/Source/LuaWrap/CSharpInterfaceWrap.cs" Line="96" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
