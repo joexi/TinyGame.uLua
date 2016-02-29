@@ -1,4 +1,4 @@
-
+require 'sss'
 
 local self = {}
 
@@ -7,21 +7,23 @@ function self.Awake( ... )
 end
 
 function self.Start( ... )
-
-	
-
-
-
-	local tex = CSharpInterface.CreateTexture('Texture/960');
+	local tex = CSharpInterface.CreateTexture('Texture/bg');
 
 	local func1 = function() 
 		print(tex.transform.localPosition);
 		local p = tex.transform.localPosition;
 		tex.transform.localPosition = Vector3(p.x, p.y + 1, p.z);
 	end 
-	CSharpInterface.CreateSprite('Sprite/Sprite001');
-	CSharpInterface.CreateSprite('Sprite/Sprite002');
-	--CSharpInterface.CreateButton(func1, 'haha');
+
+	local btn1 = CSharpInterface.CreateButton(func1, 'haha');
+	btn1.transform.localPosition = Vector3(0, 100, 0);
+
+	local btn2 = CSharpInterface.CreateButton(func1, 'haha');
+	btn2.transform.localPosition = Vector3(0, 0, 0);
+
+	local btn3 = CSharpInterface.CreateButton(func1, 'haha');
+	btn3.transform.localPosition = Vector3(0, -100, 0);
+
 	print('Start')
 end
 

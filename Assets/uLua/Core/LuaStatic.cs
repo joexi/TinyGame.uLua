@@ -104,6 +104,7 @@ namespace LuaInterface
 		[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 		public static int loader(IntPtr L)
 		{            
+            Debug.LogError("loader");
 			// Get script to load
 			string fileName = string.Empty;
 			fileName = LuaDLL.lua_tostring(L, 1);
